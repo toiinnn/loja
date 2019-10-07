@@ -4,6 +4,10 @@ INCLUDEDIR = include
 APPDIR = application
 OBJDIR = build
 
+.PHONY: all init
+
+all: appdir
+
 CC = g++
 CFLAGS = -g -O0 -Wall -std=c++14 -pedantic -I $(INCLUDEDIR)
 
@@ -25,3 +29,10 @@ ${OBJDIR}/%.o: $(SRCDIR)/%.cpp
 
 clean:
 	rm -f $(BIN) $(OBJS) $(APPOBJ)
+
+doxy:
+	doxygen -g
+
+doc:
+	$(RM) $(DOC_DIR)/*
+	doxygen
