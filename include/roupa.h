@@ -12,6 +12,7 @@
 
 /**
  * @brief      Class for roupa.
+ *			Roupa is a type of product. It have code, description, price, brand, user gender and a size.
  */
 class Roupa : public Produto
 {
