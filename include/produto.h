@@ -19,7 +19,8 @@
 using namespace std;
 
 /**
- * @brief      Class for produto.
+ * @brief   Class for produto.
+ *			'Produto' contains all the features common to store objects.
  */
 class Produto
 {

@@ -12,6 +12,7 @@
 
 /**
  * @brief      Class for bebida.
+ * 			   Bebida is a type of product, it have a code, a description, a price and an an alcohol content
  */
 class Bebida : public Produto
 {

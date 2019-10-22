@@ -12,6 +12,7 @@
 
 /**
  * @brief      Class for fruta.
+ *			Fruta is a type of product. It have a code, a description, a price, batch date and shelf life.
  */
 class Fruta : public Produto
 {

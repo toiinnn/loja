@@ -14,6 +14,7 @@
 
 /**
  * @brief      Class for loja.
+ *			The 'loja' manages all products.
  */
 class Loja
 {
