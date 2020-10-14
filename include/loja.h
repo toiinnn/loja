@@ -7,6 +7,7 @@
 */
 #ifndef _LOJA_H_
 #define _LOJA_H_
+#include <algorithm>
 
 #include "bebida.h"
 #include "fruta.h"
@@ -28,6 +29,7 @@ public:
 	vector<shared_ptr<Produto>> get_produto();
 	void add_produto(shared_ptr<Produto> p);
 	void mostrar_produtos();
+	void mostrar_produtos_ordenados();
 	shared_ptr<Produto> procurar_produto(string cod_barras_);
 	void deletar_produto(string cod_barras_);
 	void ler_frutas();

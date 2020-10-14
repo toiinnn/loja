@@ -72,6 +72,29 @@ Loja::mostrar_produtos()
 }
 
 /**
+ * @brief      Sort products list by price
+ *
+ * @param[in]  no param
+ *
+ * @return     void function
+ */
+Loja::mostrar_produtos_ordenados()
+{
+    if (mostruario.size() == 0){
+        cout << "Sua loja ainda está vazia! Fale com seus fornecedores." << endl;
+    }else
+    {
+
+        std::sort(mostruario, mostruario + mostruario.size(),
+          [](Produto const & a, Produto const & b) -> bool
+          { return a.m_preco < b.m_preco; } );
+
+        for (auto i = mostruario.begin(); i != mostruario.end(); ++i)
+            cout << (**i) << endl;
+    }
+}
+
+/**
  * @brief      Search the product on mostruario
  *
  * @param[in]  cod_barras_  The cod barras
